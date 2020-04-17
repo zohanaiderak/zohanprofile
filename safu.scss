@@ -1,0 +1,27 @@
+.title{
+    display: flex;
+    justify-content: center;
+    color: red;
+}
+
+
+@keyframes rotation{
+    from {
+				transform: rotate3d(0deg);
+		}
+		to {
+				transform: rotate(360deg);
+		}
+}
+
+.tilted-can{
+        display: flex;
+        position: absolute;
+        top: 25%;
+        left: 30%;
+        animation-name: rotation; 
+        animation-duration:4s ;
+        animation-iteration-count :infinite;
+        animation-timing-function: linear;
+  }
+  
